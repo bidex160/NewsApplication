@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+  android:layout_marginTop="2dp"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Title"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold"
+            android:id="@+id/etitle"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_below="@id/etitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Description"
+            android:id="@+id/edesc"
+            android:textStyle="italic"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Date"
+            android:id="@+id/edate"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_below="@id/edesc"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
