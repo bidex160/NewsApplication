@@ -17,21 +17,19 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-
 
 
 public class EntertainmentFragemnt extends Fragment {
     public final String api = "3b7a2e1749c041faad5d261804acbe28";
     private static final String TAG ="Started";
     RecyclerView recyclerView;
-    Entertainmentrecycleadapter adapter;
+    recycleadapter adapter;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.entertainment_fragment_layout, container, false);
         initviews(view);
-         adapter = new Entertainmentrecycleadapter(getContext());
+         adapter = new recycleadapter(getContext());
          recyclerView.setAdapter(adapter);
          recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 

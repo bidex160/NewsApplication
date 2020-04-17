@@ -5,7 +5,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,7 +19,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class TechnologyFragment extends Fragment {
-   Entertainmentrecycleadapter adapter;
+   recycleadapter adapter;
    RecyclerView recyclerView;
     public final String api = "3b7a2e1749c041faad5d261804acbe28";
     private static final String TAG ="technology";
@@ -32,7 +31,7 @@ public class TechnologyFragment extends Fragment {
         View view = inflater.inflate(R.layout.technology_fragment_layout, container, false);
         initviews(view);
 
-        adapter = new Entertainmentrecycleadapter(getContext());
+        adapter = new recycleadapter(getContext());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 

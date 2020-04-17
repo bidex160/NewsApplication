@@ -19,7 +19,7 @@ import retrofit2.Response;
 
 public class SportsFragment extends Fragment {
 RecyclerView recyclerView;
-Entertainmentrecycleadapter adapter;
+recycleadapter adapter;
 
     public final String api = "3b7a2e1749c041faad5d261804acbe28";
     private static final String TAG ="sports";
@@ -29,7 +29,7 @@ Entertainmentrecycleadapter adapter;
         View view = inflater.inflate(R.layout.sports_fragment_layout, container, false);
         recyclerView = view.findViewById(R.id.sportrecycle);
 
-        adapter = new Entertainmentrecycleadapter(getContext());
+        adapter = new recycleadapter(getContext());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 

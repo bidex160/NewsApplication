@@ -34,6 +34,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 4:
                 SportsFragment sportsFragment = new SportsFragment();
                 return sportsFragment;
+            case 5:
+                SportsFragment sports = new SportsFragment();
+                return sports;
             default:
                 break;
 
@@ -44,7 +47,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 5;
+
+        return 6;
     }
 
     @Nullable
@@ -61,6 +65,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 return "Health";
             case 4:
                 return "Sports";
+            case 5:
+                return "new";
                 default:
                    return null;
         }

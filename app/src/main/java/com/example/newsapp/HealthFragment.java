@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,7 +21,7 @@ import retrofit2.Response;
 
 public class HealthFragment extends Fragment {
     RecyclerView recyclerView;
-    Entertainmentrecycleadapter adapter;
+    recycleadapter adapter;
     Context context;
 
     public final String api = "3b7a2e1749c041faad5d261804acbe28";
@@ -33,7 +32,7 @@ public class HealthFragment extends Fragment {
         View view = inflater.inflate(R.layout.health_fragment_layout, container, false);
 
         recyclerView = view.findViewById(R.id.healthrecycle);
-        adapter = new Entertainmentrecycleadapter(getContext());
+        adapter = new recycleadapter(getContext());
         recyclerView.setAdapter(adapter);
        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
