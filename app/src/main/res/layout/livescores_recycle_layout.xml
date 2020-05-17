@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     app:cardCornerRadius="5dp"
+    android:id="@+id/cardview"
+    android:layout_marginTop="5dp"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+<LinearLayout
+    android:id="@+id/ln"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:background="@android:color/darker_gray"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CUP"
+        android:id="@+id/leaguetupe"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+    <TextView
+
+        android:id="@+id/leaguename"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="LeagueNmae"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_marginEnd="20dp"
+        android:id="@+id/leaguedate"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Time"
+
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp" />
+</LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ln">
+            <Chronometer
+                android:id="@+id/chro"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="2dp"
+                android:text="20"
+                android:layout_marginTop="5dp"
+               android:layout_below="@+id/startime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/startime"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="2dp"
+                android:text="20"
+                android:layout_marginTop="5dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/r1"
+                android:layout_marginLeft="15dp"
+                android:padding="1dp"
+                android:layout_toRightOf="@id/chro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:id="@+id/homename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+
+                    />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/homescore"
+                    android:padding="2dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:text="0"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="380dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/r1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-4dp"
+                android:layout_toRightOf="@id/chro"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/awayscore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:padding="1dp"
+                    android:text="0"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <TextView
+
+                    android:id="@+id/awayname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="10dp"
+                    android:text="TextView"
+                    android:textDirection="ltr"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

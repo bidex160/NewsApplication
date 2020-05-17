@@ -34,17 +34,6 @@ public class EntertainmentFragemnt extends Fragment {
          recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
 
-
-
-
-
-
-
-
-
-
-
-
        RetrofitClient retrofitClient = retrofitapi.getClient().create(RetrofitClient.class);
         Call<ResponseM> responseMCall = retrofitClient.getAllnews("ng", "entertainment", api);
         responseMCall.enqueue(new Callback<ResponseM>() {

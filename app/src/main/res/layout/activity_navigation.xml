@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="170dp"
-    android:background="@android:color/holo_red_light"
+    android:background="@android:color/darker_gray"
     tools:context=".navigation">
     <ImageView
         android:layout_width="100dp"
@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/white"
-        android:text="News Application"
+        android:text="Infinite News"
         android:textSize="15dp"
         android:layout_marginLeft="8dp"
         android:layout_below="@id/src"/>

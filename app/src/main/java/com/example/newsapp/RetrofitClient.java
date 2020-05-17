@@ -5,7 +5,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface RetrofitClient {
-    @GET("posts/1")
+
 
     Call<articles> getSinglePost();
 
@@ -13,4 +13,9 @@ public interface RetrofitClient {
     @GET("top-headlines")
 
     Call<ResponseM> getAllnews(@Query("country") String country, @Query("category") String category ,@Query("apiKey") String apikey);
+
+    @GET("/sport/football/livescores")
+    Call<LiveResponse> getallive(@Query("api_key") String api);
+
+
 }

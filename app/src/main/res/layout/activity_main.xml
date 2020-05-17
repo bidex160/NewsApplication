@@ -17,7 +17,7 @@
             android:id="@+id/tool"
             app:titleTextColor="@android:color/white"
             android:textAlignment="center"
-            android:background="@android:color/holo_red_light"
+            android:background="@color/darkgray"
 
             />
 
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:scrollbars="horizontal"
             android:nestedScrollingEnabled="true"
-
+             app:tabIndicatorColor="@android:color/black"
             app:tabTextAppearance="@style/TextAppearance.Compat.Notification.Line2"
             app:tabMaxWidth="200dp"
             android:id="@+id/tab"

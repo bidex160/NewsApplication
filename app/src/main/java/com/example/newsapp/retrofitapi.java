@@ -8,6 +8,7 @@ public class retrofitapi {
     public final static  String url ="https://newsapi.org/v2/";
 
 
+
     public static Retrofit getClient() {
         if (retrofit==null) {
             retrofit = new Retrofit.Builder()

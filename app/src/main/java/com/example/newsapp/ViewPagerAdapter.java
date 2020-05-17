@@ -19,22 +19,25 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
         switch (position){
             case 0:
+                LivesScoresFragment livesScoresFragment = new LivesScoresFragment();
+                return livesScoresFragment;
+            case 1:
                 EducationFragment educationFragment = new EducationFragment();
                 return educationFragment;
 
-            case 1:
+            case 2:
               TechnologyFragment technologyFragment = new TechnologyFragment();
               return technologyFragment;
-            case 2:
+            case 3:
                 EntertainmentFragemnt entertainmentFragemnt =  new EntertainmentFragemnt();
                 return entertainmentFragemnt;
-            case 3:
+            case 4:
                 HealthFragment healthFragment = new HealthFragment();
                 return healthFragment;
-            case 4:
+            case 5:
                 SportsFragment sportsFragment = new SportsFragment();
                 return sportsFragment;
-            case 5:
+            case 6:
                 SportsFragment sports = new SportsFragment();
                 return sports;
             default:
@@ -48,7 +51,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
 
-        return 6;
+        return 7;
     }
 
     @Nullable
@@ -56,16 +59,19 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position){
             case 0:
-                return "Education";
+                return "Live Update";
+
             case 1:
-                return "Technology";
+                return "Education";
             case 2:
-                return "Entertainment";
+                return "Technology";
             case 3:
-                return "Health";
+                return "Entertainment";
             case 4:
-                return "Sports";
+                return "Health";
             case 5:
+                return "Sports";
+            case 6:
                 return "new";
                 default:
                    return null;
