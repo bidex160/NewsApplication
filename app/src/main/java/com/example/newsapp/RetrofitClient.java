@@ -17,5 +17,9 @@ public interface RetrofitClient {
     @GET("/sport/football/livescores")
     Call<LiveResponse> getallive(@Query("api_key") String api);
 
+    @GET("summary")
+    Call<ReGlobal> getglobal();
+
+
 
 }

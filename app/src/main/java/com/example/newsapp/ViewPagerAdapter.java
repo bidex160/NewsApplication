@@ -19,25 +19,22 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
         switch (position){
             case 0:
-                LivesScoresFragment livesScoresFragment = new LivesScoresFragment();
-                return livesScoresFragment;
-            case 1:
                 EducationFragment educationFragment = new EducationFragment();
                 return educationFragment;
 
-            case 2:
+            case 1:
               TechnologyFragment technologyFragment = new TechnologyFragment();
               return technologyFragment;
-            case 3:
+            case 2:
                 EntertainmentFragemnt entertainmentFragemnt =  new EntertainmentFragemnt();
                 return entertainmentFragemnt;
-            case 4:
+            case 3:
                 HealthFragment healthFragment = new HealthFragment();
                 return healthFragment;
-            case 5:
+            case 4:
                 SportsFragment sportsFragment = new SportsFragment();
                 return sportsFragment;
-            case 6:
+            case 5:
                 SportsFragment sports = new SportsFragment();
                 return sports;
             default:
@@ -51,27 +48,25 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
 
-        return 7;
+        return 6;
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position){
-            case 0:
-                return "Live Update";
 
+            case 0:
+                return "Covid 19 News";
             case 1:
-                return "Education";
-            case 2:
                 return "Technology";
-            case 3:
+            case 2:
                 return "Entertainment";
-            case 4:
+            case 3:
                 return "Health";
-            case 5:
+            case 4:
                 return "Sports";
-            case 6:
+            case 5:
                 return "new";
                 default:
                    return null;

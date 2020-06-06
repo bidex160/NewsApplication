@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/card"
     android:layout_marginTop="2dp"
-    app:cardElevation="20dp"
-    app:cardCornerRadius="20dp">
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -22,41 +23,40 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
+
         <ImageView
             android:id="@+id/imagev"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@mipmap/ic_launcher"
-            android:layout_below="@id/etitle"/>
+            android:layout_below="@id/etitle"
+            android:src="@mipmap/ic_launcher" />
 
         <TextView
-            android:layout_below="@id/imagev"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
-
-            android:text="Description"
             android:id="@+id/edesc"
-            android:textStyle="italic"
-            android:textSize="15sp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagev"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginTop="8dp"
+            android:text="Description"
+            android:textSize="15sp"
+            android:textStyle="italic" />
 
 
         <TextView
+            android:id="@+id/edate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
-            android:text="Date"
-            android:id="@+id/edate"
-            android:textStyle="bold"
-            android:textColor="@android:color/holo_red_light"
             android:layout_below="@id/edesc"
             android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginRight="5dp"
-            android:textSize="20sp"/>
-
-
+            android:text="Date"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
